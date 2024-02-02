@@ -25,7 +25,7 @@ phases:
       - echo build process finished, we should uplload to S3 now
       - cd dist/studi-store
       - ls -la
-      - aws s3 sync . s3://studi-store --delete
+      - aws s3 sync . s3://angular-is-bucket --delete
 artifacts:
   files:
     - '**/*'
